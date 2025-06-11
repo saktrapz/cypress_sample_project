@@ -6,4 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+  // Global project settings
+  viewportWidth: 1280,   // Default viewport width for tests
+  viewportHeight: 720,   // Default viewport height for tests
 });
