@@ -4,6 +4,8 @@
     "cy:run": "cypress run"
   },
   "devDependencies": {
+    "allure-commandline": "^2.34.0",
+    "allure-cypress": "^3.2.2",
     "cypress": "^14.3.3"
   }
 }

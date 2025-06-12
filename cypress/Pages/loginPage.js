@@ -1,3 +1,6 @@
+import "allure-cypress";
+import * as allure from "allure-js-commons";
+
 class LoginPage {
   visit() {
     cy.visit('https://www.saucedemo.com/');
@@ -20,10 +23,17 @@ class LoginPage {
   }
 
   validLogin(){
-    this.visit();
-    this.fillUsername('standard_user');
-    this.fillPassword('secret_sauce');
-    this.submit();
+    allure.step('Visit Login Page', () => {
+      this.visit();
+    });
+    allure.step('Enter valid username and password', () => {
+      this.fillUsername('standard_user');
+      this.fillPassword('secret_sauce');
+    });
+
+    allure.step('Click the Login button', () => {
+      this.submit();
+    });
   }
 }
 
