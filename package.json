@@ -1,11 +1,14 @@
 {
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "clean:allure": "rmdir /s /q allure-results allure-report",
+    "generate:allure": "allure generate allure-results -o allure-report --clean",
+    "view:allure": "allure serve allure-results"
   },
   "devDependencies": {
     "allure-commandline": "^2.34.0",
     "allure-cypress": "^3.2.2",
-    "cypress": "^14.3.3"
+    "cypress": "^14.4.1"
   }
 }

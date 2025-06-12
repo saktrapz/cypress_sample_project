@@ -85,7 +85,7 @@ describe('Product and Cart functionality', () => {
           });
 
           allure.step('Click on finish button', () => {
-               checkoutPage.continueButton();
+               checkoutPage.finishButton();
           });
 
           cy.get('[data-test="complete-header"]').should('contain', 'Thank you for your order!');
